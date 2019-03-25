@@ -5,6 +5,7 @@ jobs:
       - image: circleci/python3.6
     working_directory: ~/django-demo
     steps:
+      - checkout
       -run:
         name: Archive content of git repo without git files
         command: git archive -o django-demo.zip --format=zip HEAD
@@ -29,4 +30,6 @@ workflows:
           filters:
             branches:
               only: master
+
+
 
