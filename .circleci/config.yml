@@ -16,7 +16,7 @@ jobs:
           name: Create django-demo folder
           command: mkdir django-demo
       - run:
-          name: Unzip nickelfox folder
+          name: Unzip django-demo
           command: cd django-demo && unzip django-demo.zip
       - run:
           name: Remove unimportant stuff
