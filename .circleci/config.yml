@@ -17,7 +17,7 @@ jobs:
           command: mkdir django-demo
       - run:
           name: Unzip django-demo
-          command: cd django-demo && unzip django-demo.zip
+          command: cd django-demo && unzip ../django-demo.zip
       - run:
           name: Remove unimportant stuff
           command: cd django-demo && rm -rf .circleci && rm .gitignore && rm -rf .vscode
