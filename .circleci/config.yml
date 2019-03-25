@@ -23,7 +23,7 @@ jobs:
           command: cd django-demo && rm -rf .circleci
       - run:
           name: Deploy to EC2
-          command: scp -o "StrictHostKeyChecking no" -r django-demo ubuntu@ip-172-31-88-122:~/django-demo
+          command: scp -o "StrictHostKeyChecking no" -r django-demo ubuntu@172-31-88-122:~/django-demo
 
 workflows:
   version: 2
