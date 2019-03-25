@@ -6,8 +6,8 @@ jobs:
     working_directory: ~/django-demo
     steps:
       - add_ssh_keys:
-        fingerprints:
-          - "6e:9c:bf:ba:7e:89:59:19:d7:0d:23:bf:43:aa:ee:fc"
+          fingerprints:
+            - "6e:9c:bf:ba:7e:89:59:19:d7:0d:23:bf:43:aa:ee:fc"
       -checkout
       -run:
         name: Archive content of git repo without git files
