@@ -7,7 +7,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "6e:9c:bf:ba:7e:89:59:19:d7:0d:23:bf:43:aa:ee:fc"
+            - "12:98:83:66:db:34:d7:ee:62:39:d7:df:af:27:04:64"
       - checkout
       - run:
           name: Archive content of git repo without git files
